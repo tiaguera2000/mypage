@@ -13,7 +13,13 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+Route::prefix('v1')->group(function(){
 
+    //Route::apiResource('resume', ResumeController::class);
+    Route::apiResource('resume', 'App\Http\Controllers\ResumeController');
+
+
+});
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
