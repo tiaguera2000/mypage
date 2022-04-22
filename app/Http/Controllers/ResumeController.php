@@ -20,7 +20,7 @@ class ResumeController extends Controller
                 'role' => 'PHP mid developer|Laravel'];
         return response()->json($data, 200);
     }
-
+//
     /**
      * Show the form for creating a new resource.
      *
