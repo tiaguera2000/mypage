@@ -15,6 +15,9 @@ class ResumeController extends Controller
      */
     public function index()
     {
+        $data = ['title' => 'Tiago Reis Demeneck',
+                'description' => 'Personal Tiago Reis Demeneck information.',
+                'role' => 'PHP mid developer|Laravel'];
         return response()->json(['message'=>'Get endpoint'], 200);
     }
 
